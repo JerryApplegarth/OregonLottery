@@ -16,9 +16,8 @@ class MainActivity : ComponentActivity() {
 		setContent {
 			OregonLotteryTheme {
 
-					navController = rememberNavController()
-					Navigation(navController)
-
+				navController = rememberNavController()
+				Navigation(navController)
 
 			}
 		}
