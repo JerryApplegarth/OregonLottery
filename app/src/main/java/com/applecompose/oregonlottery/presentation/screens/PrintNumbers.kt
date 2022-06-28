@@ -61,9 +61,19 @@ fun PrintNumbers(
 			modifier = Modifier.clickable {
 				navController.navigate(route = Screen.HomeScreen.route)
 			},
-			text = "Click to Go Back",
+			text = "Click to GO BACK...",
+			fontSize = 24.sp,
 			fontWeight = FontWeight.Bold
 		)
+		Text(
+			modifier = Modifier.clickable {
+				navController.navigate(route = Screen.HomeScreen.route)
+			},
+			text = "...and get new numbers",
+			fontSize = 16.sp,
+			fontWeight = FontWeight.Bold
+		)
+
 		val firstNumbers = (1..49).random()
 		val secondNumbers = ((1..49) - firstNumbers).random()
 		val thirdNumbers = ((1..49) - firstNumbers - secondNumbers).random()

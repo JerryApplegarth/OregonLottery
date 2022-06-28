@@ -1,7 +1,10 @@
 package com.applecompose.oregonlottery.presentation.navigation
 
 import androidx.compose.runtime.Composable
+import androidx.navigation.NavController
 import androidx.navigation.NavHostController
+import androidx.navigation.NavOptionsBuilder
+import androidx.navigation.PopUpToBuilder
 
 
 import androidx.navigation.compose.rememberNavController
@@ -14,6 +17,9 @@ import com.applecompose.oregonlottery.presentation.screens.HomeScreen
 
 @Composable
 fun Navigation(navController: NavHostController) {
+
+
+
 	val navController = rememberNavController()
 	NavHost(navController = navController, startDestination = Screen.HomeScreen.route) {
 
@@ -27,6 +33,11 @@ fun Navigation(navController: NavHostController) {
 			route = Screen.PrintNumbers.route
 		) {
 			PrintNumbers(navController = navController)
+
+
+
+
 		}
+
 	}
 }
