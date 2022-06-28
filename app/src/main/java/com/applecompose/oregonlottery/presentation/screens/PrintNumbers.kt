@@ -64,14 +64,14 @@ fun PrintNumbers(
 			text = "Click to Go Back",
 			fontWeight = FontWeight.Bold
 		)
-		val firstNumbers = (1..69).random()
-		val secondNumbers = ((1..69) - firstNumbers).random()
-		val thirdNumbers = ((1..69) - firstNumbers - secondNumbers).random()
-		val forthNumbers = ((1..69) - firstNumbers - secondNumbers
+		val firstNumbers = (1..48).random()
+		val secondNumbers = ((1..48) - firstNumbers).random()
+		val thirdNumbers = ((1..48) - firstNumbers - secondNumbers).random()
+		val forthNumbers = ((1..48) - firstNumbers - secondNumbers
 				- thirdNumbers).random()
-		val fifthNumbers = ((1..69) - firstNumbers - secondNumbers
+		val fifthNumbers = ((1..48) - firstNumbers - secondNumbers
 				- thirdNumbers - forthNumbers).random()
-		val powerballNumber = ((1..26) - firstNumbers - secondNumbers
+		val powerballNumber = ((1..48) - firstNumbers - secondNumbers
 				- thirdNumbers - forthNumbers - fifthNumbers).random()
 		val myLuckyNumber1: Int = firstNumbers
 		val myLuckyNumber2: Int = secondNumbers
@@ -122,7 +122,7 @@ fun PrintNumbers(
 				text = myPowerBall.toString(),
 				fontWeight = FontWeight.Bold,
 				fontSize = 24.sp,
-				color = MaterialTheme.colors.onPrimary,
+				//color = MaterialTheme.colors.onPrimary,
 				modifier = Modifier.padding(8.dp),
 			)
 		}
