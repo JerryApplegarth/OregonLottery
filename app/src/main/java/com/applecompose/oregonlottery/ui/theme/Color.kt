@@ -18,8 +18,9 @@ val OnSurface = Color(0xFF201a17)
 val OnPrimary = Color(0xFFffffff)
 val OnSecondary = Color(0xFFffffff)
 val PrimaryVariant = Color(0xFF82e9de)
-val NewBackground = Color(0xFFB3E9E4)
+val NewBackground = Color(0xFF84F4E7)
 val CardBackground = Color(0xFF54928C)
+val PinkFont = Color(0xFFD63DF4)
 
 //Dark
 val DarkPrimary = Color(0xff00867d)
@@ -60,4 +61,4 @@ val Colors.newBackgroundColor: Color
 
 val Colors.fontColor: Color
     @Composable
-    get() = if (isLight) DarkOnSecondary else DarkOnPrimary
+    get() = if (isLight) PinkFont else DarkOnPrimary

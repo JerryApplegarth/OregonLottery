@@ -12,6 +12,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 
 @Composable
 fun MyTopAppBar(
@@ -19,13 +20,14 @@ fun MyTopAppBar(
 ) {
 	Row(
 		modifier = Modifier
-			.background(MaterialTheme.colors.primary)
+			.background(MaterialTheme.colors.onSecondary)
 			.fillMaxWidth()
 			.height(36.dp)
 			.padding(8.dp)
 	) {
 		Text(
-			text = "Power Ball Picker",
+			text = "Oregon Lottery Picker",
+			fontSize = 18.sp,
 			modifier = Modifier.align(alignment = Alignment.CenterVertically)
 		)
 	}
