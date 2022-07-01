@@ -74,14 +74,14 @@ fun PrintNumbers(
 			fontWeight = FontWeight.Bold
 		)
 
-		val firstNumbers = (1..49).random()
-		val secondNumbers = ((1..49) - firstNumbers).random()
-		val thirdNumbers = ((1..49) - firstNumbers - secondNumbers).random()
-		val forthNumbers = ((1..49) - firstNumbers - secondNumbers
+		val firstNumbers = (1..48).random()
+		val secondNumbers = ((1..48) - firstNumbers).random()
+		val thirdNumbers = ((1..48) - firstNumbers - secondNumbers).random()
+		val forthNumbers = ((1..48) - firstNumbers - secondNumbers
 				- thirdNumbers).random()
-		val fifthNumbers = ((1..49) - firstNumbers - secondNumbers
+		val fifthNumbers = ((1..48) - firstNumbers - secondNumbers
 				- thirdNumbers - forthNumbers).random()
-		val powerballNumber = ((1..49) - firstNumbers - secondNumbers
+		val powerballNumber = ((1..48) - firstNumbers - secondNumbers
 				- thirdNumbers - forthNumbers - fifthNumbers).random()
 		val myLuckyNumber1: Int = firstNumbers
 		val myLuckyNumber2: Int = secondNumbers
@@ -101,13 +101,13 @@ fun PrintNumbers(
 			Text(
 				modifier = Modifier.padding(8.dp),
 				fontWeight = FontWeight.Bold,
-				text = "$myLuckyNumber1,",
+				text = "$myLuckyNumber1",
 				fontSize = 24.sp,
 			)
 			Text(
 				modifier = Modifier.padding(8.dp),
 				fontWeight = FontWeight.Bold,
-				text = "$myLuckyNumber2,",
+				text = "$myLuckyNumber2",
 				fontSize = 24.sp,
 			)
 			Text(
