@@ -41,7 +41,7 @@ fun HomeScreen(navController: NavController) {
 			Text(
 				modifier = Modifier
 					.padding(start = 8.dp),
-				text = "Janice...",
+				text = stringResource(R.string.janice),
 				fontSize = 36.sp,
 				fontWeight = FontWeight.ExtraBold,
 				fontFamily = FontFamily.Cursive,
@@ -52,7 +52,7 @@ fun HomeScreen(navController: NavController) {
 			Text(
 				modifier = Modifier
 					.padding(start = 8.dp),
-				text = "...Welcome to the Oregon Lottery. Your winning number is here.",
+				text = stringResource(R.string.welcome_to_oregon),
 				fontSize = 20.sp,
 				fontWeight = FontWeight.Bold,
 				color = MaterialTheme.colors.onPrimary
