@@ -41,7 +41,7 @@ fun HomeScreen(navController: NavController) {
 			Text(
 				modifier = Modifier
 					.padding(start = 8.dp),
-				text = "Janis...",
+				text = "Janice...",
 				fontSize = 36.sp,
 				fontWeight = FontWeight.ExtraBold,
 				fontFamily = FontFamily.Cursive,
